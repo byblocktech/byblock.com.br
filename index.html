@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByBlock Group</title>
+    <style>
+        /* Estilo Geral */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Nome do Grupo Superior */
+        header {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            margin-top: 30px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* Seções de Conteúdo */
+        section {
+            width: 80%;
+            max-width: 800px;
+            margin-top: 80px;
+            text-align: center;
+            display: none; /* Escondido por padrão para simular navegação */
+        }
+
+        /* Seção Ativa */
+        section:target {
+            display: block;
+        }
+
+        /* Exibir a Home (Sobre) por padrão se não houver hash */
+        #sobre {
+            display: block;
+        }
+        
+        /* Botão de Download */
+        .btn-download {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ByBlock Group</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#softwares">Softwares</a>
+        <a href="#opensource">Open Source</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao ByBlock Group. Focamos em soluções minimalistas e eficientes.</p>
+    </section>
+
+    <section id="softwares">
+        <h2>Nossos Softwares</h2>
+        <p>Confira nossa última ferramenta disponível para Windows:</p>
+        
+        <a href="https://github.com/USUARIO/REPOSITORIO/releases/download/v1.0.0/projeto.exe" class="btn-download">
+            Baixar Projeto (.exe)
+        </a>
+    </section>
+
+    <section id="opensource">
+        <h2>Open Source</h2>
+        <p>Acreditamos na transparência. Explore nossos repositórios públicos no GitHub.</p>
+    </section>
+
+</body>
+</html>
